@@ -1,0 +1,96 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #0D262D;
+    color: #fff;
+    height: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: "Pixel";
+    src: url(Pixel.ttf);
+}
+
+#tela-jogo {
+    border: 10px blue solid;
+    background-color: deepskyblue;
+    height: 700px;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.passaro {
+    width: 60px;
+    position: absolute;
+    left: 50%;
+
+}
+
+.dois-canos {
+    height: 100%;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.cano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cano-boca {
+    border: 2px black solid;
+    background-color: green;
+    width: 130px;
+    height: 30px;
+
+}
+
+.cano-corpo {
+    background-color: green;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    width: 110px;
+    height: 140px;
+}
+
+.progresso {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-family: "Pixel", monospace;
+    font-size: 50px;
+    z-index: 7;
+}
+
+.aviso {
+    display:none;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    /* font-family: "Pixel", monospace; */
+    font-size: 100px;
+}
